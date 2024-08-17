@@ -5,11 +5,12 @@ import {
   SlideInFromLeft,
   ScaleUp,
 } from "../../motions/Framermotionvalues";
+import Spline from "@splinetool/react-spline";
 function HomeSection1() {
   return (
-    <div className="row m-0   HomeSection1 overflow-hidden ">
-      <div className="col-12 p-0 h-100 d-flex flex-column  p-2 justify-content-between">
-        <div className="row m-0 justify-content-center  setheighthome">
+    <div className="row m-0   HomeSection1 overflow-hidden position-relative ">
+      <div className="col-12 p-0 h-100 d-flex flex-column  p-2 justify-content-between ">
+        <div className="row m-0 justify-content-center  setheighthome position-relative z-3">
           <div className="fontnormal col-lg-6 col-12 bighead text-light fw-bolder text-uppercase d-flex justify-content-center align-items-center text-center flex-column">
             <span className=" overflow-hidden">
               <FadeInUp delay={1}>
@@ -22,7 +23,7 @@ function HomeSection1() {
           </div>
         </div>
         <motion.div
-          className="row m-0   h-auto text-uppercase bg-black py-2 "
+          className="row m-0   h-auto text-uppercase bg-black py-2 position-relative z-3 "
           initial={{ transform: "translateY(100%)" }}
           whileInView={{ opacity: 1 }}
           animate={{ transform: "translateY(0px)" }}
@@ -52,6 +53,12 @@ function HomeSection1() {
             </div>
           </div>
         </motion.div>
+        <img
+          src="https://www.freeiconspng.com/uploads/transparent-grid-png-1.png"
+          alt=""
+          className="position-absolute z-1  w-100"
+          style={{ opacity: "15%" }}
+        />
       </div>
     </div>
   );

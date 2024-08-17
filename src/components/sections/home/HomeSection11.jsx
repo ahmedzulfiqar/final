@@ -15,7 +15,7 @@ const useIsMobile = () => {
 
   return isMobile;
 };
-function HomeSection4() {
+function HomeSection11() {
   const ref = useRef(null);
 
   const isMobile = useIsMobile();
@@ -44,12 +44,15 @@ function HomeSection4() {
           >
             <span className="overflow-hidden">
               <FadeInUp delay={0}>
-                <div className="p-0 m-0">More About</div>
+                <div className="p-0 m-0">Let'S WORK</div>
               </FadeInUp>
             </span>
             <span className="overflow-hidden">
-              <FadeInUp delay={0.2}>Ahmed</FadeInUp>
+              <FadeInUp delay={0.2}>TOGETHER</FadeInUp>
             </span>
+            <div className="btn mt-5 border-light rounded-pill bg-light text-uppercase fontnormal fw-bolder px-4 py-2 fs-5 text-dark">
+              Contact now
+            </div>
           </motion.div>
           <div className="col-12 z-3 mt-5">
             <div className="row m-0 w-100 justify-content-center">
@@ -84,37 +87,18 @@ function HomeSection4() {
                 </div>
               </div>
               <div className="col-xxl-10 col-12 text-center py-5 bg-black d-md-block d-none ">
-                <div className="fs-2 w-75 mx-auto fontnormal text-light text-uppercase">
-                  I'm a creative web developer and designer based in Karachi. My
-                  passion for clean code, user experiences, and modern design
-                  principles is evident in every project I undertake.
-                </div>
-                <p className="text-light fs-5 pt-3 w-75 mx-auto ">
-                  I'm at the forefront of utilizing the latest web development
-                  technologies to bring my innovative ideas to life. While my
-                  approach may be unconventional, my commitment to excellence is
-                  unmatched. I excel in crafting unique solutions and believe
-                  that with the right mindset, web design can transform user
-                  experiences.
-                </p>
-                <div className="btn border border-light px-lg-4 px-3 fw-bolder text-uppercase py-2 rounded-5 mt-3 text-light fs-5">
-                  Contact Now
+                <div className="fontnormal mb-3 pt-3 bighead text-light fw-bolder text-uppercase d-flex justify-content-center align-items-center text-center flex-">
+                  <span className=" overflow-hidden pe-2">
+                    <FadeInUp delay={1}>
+                      <div className=" p-0 m-0">Ahmed</div>
+                    </FadeInUp>
+                  </span>
+                  <span className=" overflow-hidden ps-2">
+                    {" "}
+                    <FadeInUp delay={1.3}> Zulfiqar</FadeInUp>
+                  </span>
                 </div>
               </div>{" "}
-              <div className="col-12 text-center py-5 bg-black d-md-none d-block px-0">
-                <div className="fs-5 fontnormal  text-light text-uppercase">
-                  I'm a creative web developer and designer based in Karachi. My
-                  passion for clean code, user experiences, and modern design
-                  principles is evident in every project I undertake.
-                </div>
-                <p className="text-light fs-6 small pt-3  mx-auto ">
-                  I'm at the forefront of utilizing the latest web development
-                  technologies to bring my innovative ideas to life.
-                </p>
-                <div className="btn border border-light px-lg-4 px-3 fw-bolder text-uppercase py-2 rounded-5 mt-3 text-light fs-6">
-                  Contact Now
-                </div>
-              </div>
             </div>
           </div>
         </motion.div>
@@ -123,4 +107,4 @@ function HomeSection4() {
   );
 }
 
-export default HomeSection4;
+export default HomeSection11;

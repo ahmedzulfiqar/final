@@ -15,10 +15,10 @@
 }
 
 .HomeSection2 {
-  height: 50vh !important;
+  height: 90vh !important;
 }
 .imageheight2 {
-  margin-top: -100px;
+  margin-top: -60px;
 }
 .HomeSection3 {
   min-height: 80vh;
@@ -36,7 +36,19 @@
   object-fit: cover;
   object-position: center;
 }
-
+.imagerounder {
+  height: 600px !important;
+  border-radius: 200px;
+}
+.imagecoverf {
+  height: min-content !important;
+}
+.minus {
+  margin-top: -50px;
+}
+.HomeSections {
+  height: 60vh;
+}
 @media screen and (max-width: 1300px) {
   .setheighthome {
     height: 90% !important;
@@ -50,15 +62,22 @@
     line-height: 1 !important;
   }
   .HomeSection2 {
-    height: 70vh !important;
+    height: 75vh !important;
   }
   .imageheight2 {
-    margin-top: -100px;
+    margin-top: 0px;
   }
   .image-container {
     width: 100%;
     height: 40vh;
     overflow: hidden;
+  }
+  .imagerounder {
+    height: 450px !important;
+    border-radius: 200px;
+  }
+  .imagecoverf {
+    height: 12vh !important;
   }
 }
 
@@ -72,42 +91,62 @@
     line-height: 1 !important;
   }
   .bighead2 {
-    font-size: 10vw;
+    font-size: 12vw;
     line-height: 1 !important;
   }
   .HomeSection2 {
-    height: 50vh !important;
+    height: 60vh !important;
   }
   .imageheight2 {
-    margin-top: -50px;
+    margin-top: 0;
   }
   .image-container {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     overflow: hidden;
   }
-}
-.loader {
-  height: calc(100vh + 200px);
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-.loader svg {
-  height: 100%;
-  width: 100%;
+  .imagerounder {
+    height: 55vh !important;
+    border-radius: 200px;
+  }
+  .imagecoverf {
+    height: 12vh !important;
+  }
 }
 
-.loader svg path {
-  stroke: #0a0a0a;
-  stroke-width: 1px;
-}
 html {
   --cursor-color: #fff;
   --cursor-color2: rgb(0, 0, 0);
 }
-.goodiv {
-  position: relative !important;
-  z-index: 1000 !important;
+.background {
+  background-color: rgb(225, 0, 0);
+
+  opacity: 0.5;
+
+  height: 100%;
+
+  width: 100%;
+
+  position: absolute;
+
+  left: 0;
+
+  top: 100%;
+}
+.bggradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 16%,
+    rgba(0, 0, 0, 0) 84%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.dbgh {
+  background-image: url(https://images.unsplash.com/photo-1711107752747-bef20d238348?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }

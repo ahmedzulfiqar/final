@@ -1,13 +1,19 @@
 import React from "react";
 import image from "../media/Untitled design.png";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 function Card({ i }) {
   return (
-    <div className="col-12 p-0 my-3 border border-light border-opacity-10 border-1 rounded-3 overflow-hidden">
+    <div className="col-12 mycursor p-0 my-3 border border-light border-opacity-10 border-1 rounded-3 overflow-hidden">
       <div className="row m-0">
         <div className="col-12 p-0">
           <div className="image-container">
-            <img src={i.image} alt="" className="img-fluid" />
+            <motion.img
+              src={i.image}
+              alt=""
+              className="img-fluid"
+              placeholder="blur"
+            />
           </div>
         </div>
         <div className="col-12 bg-blackshade py-4">

@@ -9,7 +9,7 @@ import Card from "../../blocks/Card";
 import Portfoliodata from "../../data/Portfoliodata";
 function HomeSection1() {
   return (
-    <div className="row m-0 HomeSection3  " >
+    <div className="row m-0 HomeSection3  ">
       <div className="col-12 p-0 py-5">
         <div className="row m-0 py-2 px-3">
           <div className="fontnormal col-lg-6 col-12 display-1 text-light fw-bolder text-uppercase d-flex justify-content-start align-items-start text-start flex-column">
@@ -45,7 +45,7 @@ function HomeSection1() {
             </span>
           </div>
         </div>
-        <div className="row m-0 py-5 workcard">
+        <div className="row m-0 py-lg-5 py-3 workcard">
           <div className="col-md-6 col-12 p-0">
             {Portfoliodata.slice(Portfoliodata.length / 2).map((i) => {
               return (
